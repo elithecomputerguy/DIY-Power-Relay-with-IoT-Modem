@@ -25,7 +25,8 @@ void setup()
   JAddStringToObject(req, "product", productUID);
   JAddStringToObject(req, "mode", "continuous");
   JAddBoolToObject(req, "sync", true);
-  JAddIntToObject(req, "interval", 2);
+  //Per a conversation with Blues they stated to remove the following line.
+  //JAddIntToObject(req, "interval", 2);
   notecard.sendRequest(req);
 }
 
